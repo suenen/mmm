@@ -1,0 +1,94 @@
+body {
+  background-color: #fff;
+}
+.mmb-header {
+  background-color: #f4483e;
+  position: relative;
+  height: 1.06666667rem;
+}
+.mmb-header .logo,
+.mmb-header .app {
+  width: 0.86666667rem;
+  height: 0.82666667rem;
+  position: absolute;
+  top: 0;
+}
+.mmb-header .logo img,
+.mmb-header .app img {
+  width: 0.86666667rem;
+  height: 0.8rem;
+}
+.mmb-header .logo {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  left: 0;
+  margin-left: 0.13333333rem;
+  transform: translate(-0.26666667rem, -0.13333333rem);
+}
+.mmb-header .logo img {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+}
+.mmb-header .app {
+  right: 0;
+  margin-right: 0.46666667rem;
+  top: -0.10666667rem;
+}
+.mmb-header h3 {
+  text-align: center;
+  margin: 0 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+  font-size: 0.53333333rem;
+}
+.coupro_main {
+  padding-top: 0.2rem;
+}
+.coupro_main h5 {
+  text-align: center;
+  font-size: 0.30666667rem;
+  color: #ccc;
+  height: 0.4rem;
+}
+.coupro_main .cour_BIg {
+  height: 4.4rem;
+  padding-top: 0.13333333rem;
+  border-bottom: 1px solid #ccc;
+}
+.coupro_main .cour_BIg .coupro_img {
+  width: 3.2rem;
+  height: 4rem;
+  float: left;
+  padding: 0.26666667rem;
+}
+.coupro_main .cour_BIg .coupro_img img {
+  width: 2.66666667rem;
+}
+.coupro_main .cour_BIg .coupro_right {
+  overflow: hidden;
+  height: 4rem;
+  position: relative;
+}
+.coupro_main .cour_BIg .coupro_right .coupro_text {
+  padding-top: 0.2rem;
+  font-size: 0.37333333rem;
+  padding-left: 0.29333333rem;
+}
+.coupro_main .cour_BIg .coupro_right p {
+  padding-top: 0.53333333rem;
+  padding-left: 0.29333333rem;
+  color: #ef7d0a;
+  font-size: 0.30666667rem;
+}
+.coupro_main .cour_BIg .coupro_right span {
+  padding-left: 0.29333333rem;
+  color: #000;
+  font-size: 0.29333333rem;
+}
+.coupro_main .cour_BIg .coupro_right img {
+  width: 0.66666667rem;
+  height: 0.66666667rem;
+  position: absolute;
+  right: 0.10666667rem;
+  bottom: 1.33333333rem;
+}

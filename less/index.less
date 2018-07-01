@@ -1,0 +1,102 @@
+@import "variable";
+.mmb-header {
+  .logo {
+    float: left;
+    height: 100rem/@rem;
+    padding: 25rem/@rem 32rem/@rem;
+    img {
+      width: 371rem/@rem;
+      height: 50rem/@rem;
+    }
+  }
+}
+
+// 导航栏
+.navs {
+  background-color: #fff;
+  padding: 50rem/@rem 35rem/@rem 10rem/@rem;
+  margin-bottom: 10rem/@rem;
+  li {
+    float: left;
+    width: 100rem/@rem;
+    margin-right: 90rem/@rem;
+    margin-bottom: 30rem/@rem;
+    img {
+      width: 100rem/@rem;
+      height: 100rem/@rem;
+      margin-bottom: 15rem/@rem;
+    }
+    p {
+      text-align: center;
+      font-size: 24rem/@rem;
+    }
+    a {
+      display: block;
+    }
+  }
+  li.last {
+    margin-right: 0;
+  }
+}
+// 显示与隐藏
+.navs{
+  height: 400rem/@rem;
+  overflow: hidden;
+  &.now{
+    height: 600rem/@rem;
+  }
+
+}
+
+.product {
+  background-color: #fff;
+  li {
+    height: 258rem/@rem;
+    border: 1rem/@rem solid @bdColor;
+    .item {
+      height: 100%;
+      position: relative;
+      display: block;
+      .proleft {
+        width: 230rem/@rem;
+        height: 100%;
+        img {
+          width: 200rem/@rem;
+          height: 200rem/@rem;
+          display: block;
+          margin: 29rem/@rem auto;
+        }
+      }
+      .proright {
+        height: 100%;
+        overflow: hidden;
+        font-size: 24rem/@rem;    
+        padding: 30rem/@rem;    
+        position: relative;
+        .tit {
+          color: #333;
+        }
+        span {
+          color: @mmmColor;
+        }
+        .other {
+          color: #ccc;
+          position: absolute;
+          bottom: 30rem/@rem;
+        }
+      }
+      .trash {
+        position: absolute;
+        bottom: 30rem/@rem;
+        right: 30rem/@rem;
+        color: #ccc;   
+        font-size: 30rem/@rem;
+      }
+    }
+  }
+  .moreInfo {
+    display: block;
+    margin: 20rem/@rem;
+  }
+}
+

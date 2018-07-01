@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/moneyproduct.css">
+  <script src="lib/flexible.js"></script>
+  <title>慢慢买-moneyproduct</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="mmb-header clearfix">
+      <a href="index.html" class="logo">
+      </a>
+      <h3>国内折扣</h3>
+      <a href="#" class="app">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+
+    <!-- 中间区域 -->
+    <div class="mpro_main">
+
+
+
+    </div>
+
+    <div class="footer">
+      <div class="links clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="javascript:;" class="backtop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+      </div>
+      <p class="otherlinks">
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#" class="black">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p class="website">m.manmanbuy.com</p>
+    </div>
+  </div>
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    
+    <h2>
+        {{v.productName
+        }}
+      </h2>
+      <!-- 小编烟火 慢慢买 -->
+      <div class="xiaobianyanhuo">
+        {{v.productFrom
+          }}{{v.productTips
+        }}{{v.productTime
+        }}
+      </div>
+      <!-- 图文列表 -->
+      <div class="gn-content">
+        <div class="content-pic">
+            {{@ v.productImg2}}
+        </div>
+        <p class="content-wenzi">{{v.productInfo
+            }}</p>
+        <p class="content-wenzi">{{v.productInfo1}}</p>
+      </div>
+      <!-- 大图片 -->
+      <div class="mpr_bigIMG">
+          {{@ v.productImgSm}}
+      </div>
+      <!-- 国内货源情况 -->
+      <div class="guolei">
+        {{@ v.productCity
+        }}
+      </div>
+      <!-- 前往购买 -->
+      <div class="qianwang">
+        <button>前往购买</button>
+      </div>
+        <!-- 二维码 -->
+        <div class="erweima">
+          <img src="images/mmbweixin2.png" alt="">
+        </div>
+        <!-- 发表评论 -->
+        <div class="pinglun">
+          {{@ v.productComment}}
+        </div>
+
+  
+  {{/each}}
+  
+  </script>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/moneyproduct.js"></script>
+</body>
+
+</html>

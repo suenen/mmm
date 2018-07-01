@@ -1,0 +1,221 @@
+body {
+  background-color: #fff;
+}
+.mmb-header {
+  background-color: #ff841d;
+  position: relative;
+  height: 1.06666667rem;
+}
+.mmb-header .logo,
+.mmb-header .app {
+  width: 0.86666667rem;
+  height: 0.82666667rem;
+  position: absolute;
+  top: 0;
+}
+.mmb-header .logo img,
+.mmb-header .app img {
+  width: 0.86666667rem;
+  height: 0.8rem;
+}
+.mmb-header .logo {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  left: 0;
+  margin-left: 0.13333333rem;
+  transform: translate(-0.26666667rem, -0.13333333rem);
+}
+.mmb-header .logo img {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+}
+.mmb-header .app {
+  right: 0;
+  margin-right: 0.46666667rem;
+  top: -0.10666667rem;
+}
+.mmb-header h3 {
+  text-align: center;
+  margin: 0 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+  font-size: 0.53333333rem;
+}
+.mianbaoxie {
+  height: 1.01333333rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  line-height: 1.06666667rem;
+  padding-left: 0.13333333rem;
+  font-size: 0.33333333rem;
+  border-top: 0.01333333rem solid #ccc;
+}
+.pingban {
+  height: 0.98666667rem;
+  border-bottom: 0.01333333rem solid #ccc;
+  border-top: 0.01333333rem solid #ccc;
+  background-color: #eee;
+  line-height: 0.96rem;
+  padding-left: 0.13333333rem;
+  font-size: 0.33333333rem;
+  color: #874604;
+}
+.bn1 {
+  margin: 0 0.2rem;
+}
+.bn {
+  height: 1.73333333rem;
+  background-color: #fff;
+  border-bottom: 0.01333333rem solid #ccc;
+  position: relative;
+  margin-top: 0.2rem;
+}
+.bn .bn_left {
+  float: left;
+  margin-top: 0.13333333rem;
+  text-align: center;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  background-color: #ccc;
+}
+.bn .bn_left span {
+  color: #fff;
+  font-size: 0.26666667rem;
+  display: block;
+  line-height: 0.53333333rem;
+}
+.bn:nth-child(1) .bn_left {
+  background-color: red;
+}
+.bn:nth-child(2) .bn_left {
+  background-color: orangered;
+}
+.bn:nth-child(3) .bn_left {
+  background-color: green;
+}
+.bn .bn_right {
+  height: 100%;
+  overflow: hidden;
+  padding-left: 0.2rem;
+}
+.bn .bn_right p:nth-child(1) {
+  font-size: 0.44rem;
+}
+.bn .bn_right p:nth-child(2) {
+  font-size: 0.38666667rem;
+  color: #ccc;
+}
+.bn img {
+  width: 0.53333333rem;
+  position: absolute;
+  right: 0.13333333rem;
+  top: 0.46666667rem;
+}
+.ppds {
+  background-color: #eee;
+  line-height: 0.88rem;
+  padding: 0.13333333rem;
+}
+.ppds h3 {
+  font-size: 0.33333333rem;
+  color: #763c1b;
+  border-top: 0.01333333rem solid #ccc;
+}
+.ppds .product {
+  background-color: #fff;
+  border-bottom: 0.01333333rem solid #ccc;
+}
+.ppds .product li {
+  border-top: 0.01333333rem solid #ccc;
+}
+.ppds .product .item {
+  display: block;
+  height: 100%;
+}
+.ppds .product .proleft {
+  height: 100%;
+  width: 3.13333333rem;
+}
+.ppds .product .proleft img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+  display: block;
+  margin: 0.18666667rem auto;
+}
+.ppds .product .proright {
+  height: 100%;
+  overflow: hidden;
+  padding: 0.13333333rem 0.26666667rem;
+}
+.ppds .product .proright p:nth-Child(1) {
+  font-size: 0.36rem;
+}
+.ppds .product .proright p:nth-Child(2) {
+  color: red;
+  font-size: 0.32rem;
+}
+.ppds .product .proright span {
+  color: #ccc;
+  font-size: 0.26666667rem;
+}
+.pinglun11 {
+  height: 1.01333333rem;
+  background-color: #fff;
+  line-height: 0.88rem;
+  padding: 0.13333333rem;
+}
+.pinglun11 h3 {
+  font-size: 0.33333333rem;
+  color: #763c1b;
+}
+.product1 li {
+  height: 3.13333333rem;
+  border-top: 0.01333333rem solid #ccc;
+}
+.product1 .item {
+  display: block;
+  height: 100%;
+}
+.product1 .proleft {
+  height: 100%;
+  width: 3.13333333rem;
+}
+.product1 .proleft img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+  display: block;
+  margin: 0.18666667rem auto;
+}
+.product1 .proright {
+  height: 100%;
+  overflow: hidden;
+  padding: 0.13333333rem 0.26666667rem;
+}
+.product1 .proright p:nth-Child(1) {
+  font-size: 0.36rem;
+}
+.product1 .proright p:nth-Child(2) {
+  color: red;
+  font-size: 0.32rem;
+}
+.product1 .proright span {
+  color: #ccc;
+  font-size: 0.26666667rem;
+}
+.pl2 {
+  padding: 0.26666667rem;
+  border: 0.01333333rem solid #ccc;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+.pl2 .pl_left {
+  font-size: 0.30666667rem;
+  color: #0b3125;
+}
+.pl2 .pl_right {
+  font-size: 0.33333333rem;
+  color: #666;
+}
+.pl2 p {
+  margin-top: 0.8rem;
+  font-size: 0.4rem;
+}

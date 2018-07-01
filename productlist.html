@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/productlist.css">
+  <script src="lib/flexible.js"></script>
+  <title>慢慢买-productlist</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="mmb-header clearfix">
+      <a href="index.html" class="logo">
+        <img src="images/header_logo.png" alt="">
+      </a>
+      <a href="#" class="app">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+    <!-- 搜索框 -->
+    <div class="search">
+      <input type="text" placeholder="请输入你想比价的商品">
+      <button>搜索</button>
+    </div>
+    <!-- 中间内容区域 -->
+    <div class="bT_main">
+      <!-- 面包屑导航 -->
+      <div class="bt_nav">
+        <a href="index.html">首页&nbsp;&gt;</a>
+        <a href="category.html">全部分类&nbsp;&gt;</a>
+        <!-- <a href="#">电视</a> -->
+        <button class="fr">筛选</button>
+      </div>
+      <!-- 商品 -->
+      <div class="product">
+        <ul class="clearfix propro">
+          <!-- <li>
+            <a href="#" class="item">
+              <div class="proleft fl">
+                <img src="images/categorylist.jpg" alt="">
+              </div>
+              <div class="proright">
+                <p>乐视Tv全高清50英寸液晶电视乐视Tv全高清50英寸液晶电视乐视Tv</p>
+                <p>&yen;19990</p>
+                <span>报价(6）　评论(2286)</span>
+              </div>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+      <!-- 下面的下拉框和按钮 -->
+      <!-- 插件类名的加上 -->
+      <div class="selectBtn">
+        <a href="#" class="leftBtn mfenye-last">上一页</a>
+        <select class="centerSelect mfenye-select">
+          <option value="1" selected="">1/3</option>
+          <option value="1" selected="">2/3</option>
+          <option value="1" selected="">3/3</option>
+        </select>
+        <a href="#" class="rightBtn mfenye-next">下一页</a>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="links clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="javascript:;" class="backtop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+      </div>
+      <p class="otherlinks">
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#" class="black">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p class="website">m.manmanbuy.com</p>
+    </div>
+  </div>
+  <!-- 面包屑渲染 -->
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    <a href="#">{{v.category}}</a>
+     {{/each}}
+  
+  </script>
+  <script type="text/html" id="tpl2">
+    <li>
+      {{each result v i}}
+      <!-- 跳转比价详情页 -->
+        <a href="bijia.html?productid={{v.productId}}" class="item">
+          <div class="proleft fl">
+            {{@v.productImg
+            }}
+          </div>
+          <div class="proright">
+            <p>{{v.productName
+                
+                }}</p>
+            <p>{{v.productPrice
+              }}</p>
+            <span>{{v.productQuote}}　{{v.productCom}}</span>
+          </div>
+        </a>
+        {{/each}}
+      </li>
+  
+  
+  
+  </script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/productlist.js"></script>
+</body>
+
+</html>

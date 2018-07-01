@@ -1,0 +1,95 @@
+body {
+  background-color: #fff;
+}
+.bijia {
+  height: 6.66666667rem;
+  padding: 0.53333333rem;
+  position: relative;
+}
+.bijia .bj_Name {
+  text-align: center;
+  font-size: 0.4rem;
+}
+.bijia .bj_bigIMg img {
+  display: block;
+  margin: 0  auto;
+  width: 4.4rem;
+}
+.bijia .bj_smallIMG img {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  bottom: 0.53333333rem;
+  right: 0.66666667rem;
+}
+.bj_price {
+  position: relative;
+  z-index: 999;
+}
+.bj_price li {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #be4f36;
+  border-top: 1px solid #be4f36;
+  background-color: #ffc527;
+  border-left: 1px solid #be4f36;
+}
+.bj_price li:nth-child(1) {
+  border-left: none;
+  background-color: #ff9915;
+}
+.bj_price a {
+  font-size: 0.37333333rem;
+  color: #fff;
+}
+.bj_shoping {
+  height: 0.93333333rem;
+  line-height: 0.93333333rem;
+  font-size: 0.4rem;
+  margin-top: 1.73333333rem;
+}
+.bj_txt {
+  border-top: 0.02666667rem solid #ccc;
+  height: 1.46666667rem;
+  font-size: 0.32rem;
+  padding: 0.2rem;
+  margin-top: 1.33333333rem;
+}
+.wangyoupingjia {
+  height: 0.93333333rem;
+  background-color: #eee;
+  border-top: 4px solid #666;
+  text-align: center;
+  font-size: 0.34666667rem;
+  line-height: 0.86666667rem;
+}
+.bj_pinglun {
+  padding: 0.26666667rem;
+  font-size: 0.32rem;
+}
+.bj_pinglun .pinglun_top,
+.bj_pinglun .pinglun_center {
+  color: #666;
+}
+.bj_pinglun .pinglun_bottom {
+  padding-top: 0.33333333rem;
+  border-bottom: 0.01333333rem solid #ccc;
+}
+.bj_btn {
+  height: 2rem;
+  font-size: 0.32rem;
+  width: 100%;
+  padding: 0.53333333rem;
+}
+.bj_btn button {
+  width: 100%;
+  height: 0.8rem;
+  border-radius: 0.13333333rem;
+  border: none;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+}
+table {
+  font-size: 0.4rem;
+}

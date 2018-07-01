@@ -1,0 +1,93 @@
+.mmb-header .logo {
+  float: left;
+  height: 1.33333333rem;
+  padding: 0.33333333rem 0.42666667rem;
+}
+.mmb-header .logo img {
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+}
+.navs {
+  background-color: #fff;
+  padding: 0.66666667rem 0.46666667rem 0.13333333rem;
+  margin-bottom: 0.13333333rem;
+}
+.navs li {
+  float: left;
+  width: 1.33333333rem;
+  margin-right: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.navs li img {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  margin-bottom: 0.2rem;
+}
+.navs li p {
+  text-align: center;
+  font-size: 0.32rem;
+}
+.navs li a {
+  display: block;
+}
+.navs li.last {
+  margin-right: 0;
+}
+.navs {
+  height: 5.33333333rem;
+  overflow: hidden;
+}
+.navs.now {
+  height: 8rem;
+}
+.product {
+  background-color: #fff;
+}
+.product li {
+  height: 3.44rem;
+  border: 0.01333333rem solid #ccc;
+}
+.product li .item {
+  height: 100%;
+  position: relative;
+  display: block;
+}
+.product li .item .proleft {
+  width: 3.06666667rem;
+  height: 100%;
+}
+.product li .item .proleft img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+  display: block;
+  margin: 0.38666667rem auto;
+}
+.product li .item .proright {
+  height: 100%;
+  overflow: hidden;
+  font-size: 0.32rem;
+  padding: 0.4rem;
+  position: relative;
+}
+.product li .item .proright .tit {
+  color: #333;
+}
+.product li .item .proright span {
+  color: #ff841d;
+}
+.product li .item .proright .other {
+  color: #ccc;
+  position: absolute;
+  bottom: 0.4rem;
+}
+.product li .item .trash {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.4rem;
+  color: #ccc;
+  font-size: 0.4rem;
+}
+.product .moreInfo {
+  display: block;
+  margin: 0.26666667rem;
+}

@@ -1,0 +1,59 @@
+body {
+  background-color: #fff;
+}
+.product li {
+  height: 3.13333333rem;
+  border-top: 0.01333333rem solid #ccc;
+}
+.product .item {
+  display: block;
+  height: 100%;
+}
+.product .proleft {
+  height: 100%;
+  width: 3.13333333rem;
+}
+.product .proleft img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+  display: block;
+  margin: 0.18666667rem auto;
+}
+.product .proright {
+  height: 100%;
+  overflow: hidden;
+  padding: 0.13333333rem 0.26666667rem;
+}
+.product .proright p:nth-Child(1) {
+  font-size: 0.36rem;
+}
+.product .proright p:nth-Child(2) {
+  color: red;
+  font-size: 0.32rem;
+}
+.product .proright span {
+  color: #ccc;
+  font-size: 0.26666667rem;
+}
+.selectBtn {
+  text-align: center;
+}
+.selectBtn a {
+  background: #ccc;
+  margin: 0 1.33333333rem;
+  height: 0.8rem;
+  width: 2.21333333rem;
+  border: 0.01333333rem solid #ccc;
+  font-size: 0.30666667rem;
+  padding: 0.2rem;
+  background-color: #ccc;
+  border-radius: 0.06666667rem;
+}
+.selectBtn select {
+  width: 1.6rem;
+  height: 0.8rem;
+  padding-top: 0.02666667rem;
+  padding-left: 0.26666667rem;
+  font-size: 0.33333333rem;
+  margin-top: 0.10666667rem;
+}

@@ -1,0 +1,117 @@
+@import "variable";
+.mmb-header {
+  position: relative;
+  height: 80rem/@rem;
+  .logo,
+  .app{
+    width: 51rem/@rem;
+    height: 62rem/@rem;
+    position: absolute;
+    top: 0;
+    img{
+      width: 65rem/@rem;
+      height: 60rem/@rem;
+    }
+  }
+  .logo{
+    left:0;
+    background-color: #ff841d;
+    top: 8rem/@rem;
+    margin-left: 10rem/@rem;
+  }
+  .app{
+    right:0;
+    margin-right: 35rem/@rem;
+    top: -8rem/@rem
+
+
+  }
+  h3{
+  text-align: center;
+  margin: 0 80rem/@rem;
+  line-height: 80rem/@rem;
+  color: #fff;
+  font-size: 40rem/@rem;
+ 
+   
+  }
+}
+// 商品渲染页
+.product {
+  background-color: #fff;
+  li {
+    height: 258rem/@rem;
+    border: 1rem/@rem solid @bdColor;
+    .item {
+      height: 100%;
+      position: relative;
+      display: block;
+      .proleft {
+        width: 230rem/@rem;
+        height: 100%;
+        img {
+          width: 200rem/@rem;
+          height: 200rem/@rem;
+          display: block;
+          margin: 29rem/@rem auto;
+        }
+      }
+      .proright {
+        height: 100%;
+        overflow: hidden;
+        font-size: 24rem/@rem;    
+        padding: 30rem/@rem;    
+        position: relative;
+        .tit {
+          color: #333;
+        }
+        span {
+          color: @mmmColor;
+        }
+        .other {
+          color: #ccc;
+          position: absolute;
+          bottom: 30rem/@rem;
+        }
+      }
+      .trash {
+        position: absolute;
+        bottom: 30rem/@rem;
+        right: 30rem/@rem;
+        color: #ccc;   
+      }
+    }
+  }
+  .moreInfo {
+    display: block;
+    margin: 20rem/@rem;
+  }
+}
+
+  // 下拉框和按钮
+  .selectBtn{
+    text-align: center;
+    
+   
+    a{
+    background: #ccc;
+     margin: 0 100rem/@rem;
+     height: 60rem/@rem;
+     width: 166rem/@rem;
+      border: 1rem/@rem solid @bdColor;
+      font-size: 23rem/@rem;
+      padding: 15rem/@rem;
+      background-color: @bdColor;
+      border-radius: 5rem/@rem;        
+     
+   
+    }
+    select{
+     width: 120rem/@rem;
+     height:   60rem/@rem;
+     padding-top: 2rem/@rem;
+     padding-left: 20rem/@rem;
+     font-size: 25rem/@rem;
+     margin-top: 8rem/@rem;
+    }
+ }

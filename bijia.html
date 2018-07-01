@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/bijia.css">
+  <script src="lib/flexible.js"></script>
+  <title>慢慢买-bijia</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="mmb-header clearfix">
+      <a href="index.html" class="logo">
+        <img src="images/header_logo.png" alt="">
+      </a>
+      <a href="#" class="app">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+    <!-- 搜索框 -->
+    <div class="search">
+      <input type="text" placeholder="请输入你想比价的商品">
+      <button>搜索</button>
+    </div>
+    <!-- 中间内容区域 -->
+    <div class="bT_main">
+      <!-- 面包屑导航 -->
+      <div class="bt_nav">
+        <a href="index.html">首页&nbsp;&gt;</a>
+        <a href="category.html">全部分类&nbsp;&gt;</a>
+        <!-- <a href="#">电视</a> -->
+        <button class="fr">筛选</button>
+      </div>
+
+      <!-- 大图和标题 -->
+      <div class="bijia">
+        <!-- <div class="bj_Name">
+          苹果Apple iPhone7 Plus (A1661) 32G 玫瑰金色 全网通4G手机
+        </div>
+        <div class="bj_bigIMg">
+          <a href="javascript:;">
+            <img src="http://pro.zuyushop.com:8015/ProPic/20169/Thumb/Thumb_2016090009323065176.png" alt="">
+          </a>
+        </div>
+        <div class="bj_smallIMG">
+          <a href="javascript:;">
+            <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+          </a>
+        </div> -->
+      </div>
+      <!-- 比价购买 产品参数 -->
+      <div class="bj_price">
+        <ul class="clearfix">
+          <li>
+            <a href="#">
+              比价购买
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              产品参数
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              评价(2013)
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 京东商城 去购买 -->
+     
+
+      <!--文字(实际价格)区域-->
+      <div class="bj_txt">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+      </div>
+      <!-- 网友评价 -->
+      <div class="wangyoupingjia">
+        网友评价
+      </div>
+      <!-- 评论数字 -->
+      <div class="bj_pinglun">
+        <!-- 上中下
+                <div class="pinglun_top clearfix">
+                  <span class="fl">137*****21</span>
+                  <span class="fr">2016/10/14</span>
+                </div>
+                <div class="pinglun_center clearfix">
+                  <span class="fr">购买自:购买商城</span>
+                </div>
+                <div class="pinglun_bottom">
+        
+                  特意用了十来天再来评论。玫瑰金真是美美哒！系统还是一如既往的流畅，电池的续航能力感觉好多了，轻度使用的话，一天多不成问题。外放的音量很大，音质也还不错。拍照画质也很好。唯一觉得不足的是，在室内手机信号好像一直都是一格，但不影响使用就是了
+        
+                </div> -->
+      </div>
+
+      <!-- 查看更多评价 -->
+      <div class="bj_btn">
+        <button>查看更多评价</button>
+      </div>
+
+    </div>
+
+
+    <div class="footer">
+      <div class="links clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="javascript:;" class="backtop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+      </div>
+      <p class="otherlinks">
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#" class="black">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p class="website">m.manmanbuy.com</p>
+    </div>
+  </div>
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    <!-- v.productName  <>语法切割数组-->
+    <%
+    var pro = v.productName;
+    pro = pro.split(' ')[0];
+    %>
+    <!-- {{pro}} -->
+    <a href="#">{{pro}}</a>
+    {{/each}}
+  </script>
+  <script type="text/html" id="tpl2">
+    {{each result v i}}
+    <div class="bj_Name">
+        {{v.productName
+}}
+      </div>
+      <div class="bj_bigIMg">
+        <a href="javascript:;">
+         {{@v.productImg
+         }}
+        </a>
+      </div>
+      <div class="bj_smallIMG">
+        <a href="javascript:;">
+          <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+        </a>
+      </div>
+      <div class="bj_shoping">
+          {{@v.bjShop}}
+
+      </div>
+        {{/each}}
+  
+  </script>
+  <script type="text/html" id="tpl3">
+     <!-- 上中下 -->
+     {{each result v i}}
+     <div class="pinglun_top clearfix">
+        <span class="fl">{{v.comName}}</span>
+        <span class="fr">{{v.comTime
+          }}</span>
+      </div>
+      <div class="pinglun_center clearfix">
+        <span class="fr">{{v.comFrom}}</span>
+      </div>
+      <div class="pinglun_bottom">
+          {{v.comContent}}
+
+      </div>
+      {{/each}}
+  
+  </script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/bijia.js"></script>
+</body>
+
+</html>

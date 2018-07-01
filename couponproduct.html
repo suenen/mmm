@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
+  <script src="lib/flexible.js"></script>
+  <title>慢慢买-coupon</title>
+
+</head>
+
+<body>
+  <div class="containner">
+    <!-- 头部 -->
+    <div class="mmb-header clearfix">
+      <a href="index.html" class="logo">
+      </a>
+      <h3>肯德基优惠卷</h3>
+      <a href="#" class="app">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+    <!-- 内容区域 -->
+    <div class="coupro_main clearfix">
+   <!-- 挖个坑 -->
+    </div>
+    
+    <div class="footer">
+      <div class="links clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="javascript:;" class="backtop">
+          <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+      </div>
+      <p class="otherlinks">
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#" class="black">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p class="website">m.manmanbuy.com</p>
+    </div>
+  </div>
+  <script type="text/html" id="tpl">
+      
+       <h5>
+          --点餐前出示手机中的优惠券，即可享受优惠--
+        </h5>
+        {{each result v i}}
+        <div class="cour_BIg">
+          <div class="coupro_img">
+            <img src="{{v.couponProductImg
+            }}" alt="">
+          </div>
+          <div class="coupro_right">
+            <div class="coupro_text">
+             {{v.couponProductName
+             }}
+            </div>
+            <span>&yen;990</span>
+            <p>{{v.couponProductTime}}</p>
+            <img src="images/youjiantou.png" alt="">
+          </div>
+          
+        </div>
+           {{/each}} 
+ </script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="lib/iscroll.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/couponproduct.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body {
+  background-color: #fff;
+}
+.mmb-header {
+  position: relative;
+  height: 1.06666667rem;
+}
+.mmb-header .logo,
+.mmb-header .app {
+  width: 0.86666667rem;
+  height: 0.82666667rem;
+  position: absolute;
+  top: 0;
+}
+.mmb-header .logo img,
+.mmb-header .app img {
+  width: 0.86666667rem;
+  height: 0.8rem;
+}
+.mmb-header .logo {
+  left: 0;
+  background-color: #ff841d;
+  top: 0.10666667rem;
+  margin-left: 0.13333333rem;
+}
+.mmb-header .app {
+  right: 0;
+  margin-right: 0.46666667rem;
+  top: -0.10666667rem;
+}
+.mmb-header h3 {
+  text-align: center;
+  margin: 0 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+  font-size: 0.53333333rem;
+}
+.inscount_main {
+  background-color: #fff;
+}
+.goods_left {
+  border-right: 0.01333333rem solid #eeeeee;
+  border-bottom: 0.01333333rem solid #eeeeee;
+  box-sizing: border-box;
+  text-align: center;
+  width: 50%;
+  height: 7.06666667rem;
+  float: left;
+}
+.goods_left img {
+  height: 3.6rem;
+  display: block;
+  margin: 0.66666667rem auto;
+}
+.goods_left .div_1 {
+  font-size: 0.34666667rem;
+}
+.goods_left .div_2 {
+  font-size: 0.26666667rem;
+  color: #ff841d;
+}
+.goods_left .div_3 {
+  font-size: 0.32rem;
+  color: #ccc;
+}
